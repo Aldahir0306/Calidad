@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIVER · Refricentro Peregrino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Enlace a tu nuevo archivo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-head">
+      <div class="name">SIVER</div>
+      <div class="sub">Refricentro Peregrino · Inicio de sesión</div>
+    </div>
+    <div class="login-body">
+      <div id="loginErrorBox"></div>
+      <div class="field">
+        <label style="font-size:12px;color:var(--muted);">Correo institucional</label>
+        <input id="loginEmail" type="email" placeholder="usuario@refricentro.pe">
+      </div>
+      <div class="field">
+        <label style="font-size:12px;color:var(--muted);">Contraseña</label>
+        <input id="loginPassword" type="password" placeholder="••••••••">
+      </div>
+      <button class="btn" id="btnLogin" style="width:100%;">Iniciar sesión</button>
+      <div class="login-hint">
+        <div class="hint-title">Credenciales de prueba (demo académica)</div>
+        <div class="row"><span>admin@refricentro.pe</span><span>admin123</span></div>
+        <div class="row"><span>vendedor@refricentro.pe</span><span>venta123</span></div>
+        <div class="row"><span>almacen@refricentro.pe</span><span>almacen123</span></div>
+        <div class="row"><span>tecnico@refricentro.pe</span><span>tecnico123</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="app" style="display:none;">
+
+  <div id="sidebar">
+    <div class="brand">
+      <div class="name">SIVER</div>
+      <div class="sub">Refricentro Peregrino</div>
+    </div>
+    <nav class="modules" id="navModules"></nav>
+    <div class="sidebar-foot">Avance funcional: 50%<br>Semana 5 — QA SIVER</div>
+  </div>
+
+  <div id="main">
+    <div id="topbar">
+      <div class="title" id="viewTitle">Panel</div>
+      <div class="user-chip">
+        <span>Sesión: <span class="u-name" id="sessionUserLabel"></span></span>
+        <button class="btn secondary small" id="btnLogout">Cerrar sesión</button>
+      </div>
+    </div>
+    <div id="content"></div>
+  </div>
+
+</div>
+<div class="toast" id="toast"></div>
+
+<!-- Enlace a tu nuevo archivo JavaScript -->
+<script src="app.js"></script>
+</body>
+</html>
